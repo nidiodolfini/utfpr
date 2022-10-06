@@ -6,8 +6,9 @@ package br.edu.utfpr.atividadejava1utfpr;
 
 /**
  *
- * @author nidio
+ * @author Nidio dos Santos Dolfini at Especialização em Java - Java I - UTFPR
  */
+
 public class Motor {
         private int qtdPist;
     private int potencia;

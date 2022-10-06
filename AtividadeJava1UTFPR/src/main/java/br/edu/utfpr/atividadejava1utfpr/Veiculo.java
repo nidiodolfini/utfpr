@@ -6,15 +6,16 @@ package br.edu.utfpr.atividadejava1utfpr;
 
 /**
  *
- * @author nidio
+ * @author Nidio dos Santos Dolfini at Especialização em Java - Java I - UTFPR
  */
+
 public abstract class Veiculo {
     private String placa;
     private String marca;
     private String modelo;
     private String cor;
     private float velocMax;
-    private int qtdRocas;
+    private int qtdRodas;
     private Motor motor;
 
     public Veiculo() {
@@ -23,11 +24,11 @@ public abstract class Veiculo {
         this.modelo = " ";
         this.cor = " ";
         this.velocMax = 0;
-        this.qtdRocas = 0;
+        this.qtdRodas = 0;
         motor = new Motor();
     }
     
-    public abstract float calcVel(float velocMax);
+    public abstract void calcVel();
 
     public String getPlaca() {
         return placa;
@@ -69,12 +70,12 @@ public abstract class Veiculo {
         this.velocMax = velocMax;
     }
 
-    public int getQtdRocas() {
-        return qtdRocas;
+    public int getQtdRodas() {
+        return qtdRodas;
     }
 
-    public final void setQtdRocas(int qtdRocas) {
-        this.qtdRocas = qtdRocas;
+    public final void setQtdRodas(int qtdRocas) {
+        this.qtdRodas = qtdRocas;
     }
 
     public Motor getMotor() {
